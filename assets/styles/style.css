@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root{
+    --color-text1: hsl(0, 0%, 100%);
+    --color-text2: hsl(241, 100%, 89%);
+    --background-header: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    --background-puntuacion: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    --background-button: hsl(224, 30%, 27%);
+    --background-button-hover: hsl(224, 50%, 27%);
+
+    --reaction-text:hsl(0, 100%, 67%);
+    --background-reaction: hsl(0, 100%, 67%, 0.1);
+    --background-reaction-hover: hsl(0, 100%, 67%, 0.3);
+
+    --memory-text:hsl(39, 100%, 56%);
+    --background-memory: hsl(39, 100%, 56%, 0.1);
+    --background-memory-hover: hsl(39, 100%, 56%, 0.3);
+
+    --verbal-text:hsl(166, 100%, 37%);
+    --background-verbal: hsl(166, 100%, 37%, 0.1);
+    --background-verbal-hover: hsl(166, 100%, 37%, 0.3);
+
+    --visual-text:hsl(234, 85%, 45%);
+    --background-visual: hsl(234, 85%, 45%, 0.1);
+    --background-visual-hover: hsl(234, 85%, 45%, 0.3);
+}
+
+a{
+    text-decoration: none;
+    color: var(--visual-text);
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-header);
+    border-radius: 0 0 1.5rem 1.5rem ;
+}
+
+header >h1{
+    color: var(--color-text2);
+    font-size: 1.5rem;
+}
+
+.puntuacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--background-puntuacion);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.puntuacion >p{
+    color: var(--color-text1);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.puntuacion >span{
+    color: var(--color-text2);
+}
+
+.note{
+    text-align: center;
+    color: var(--color-text2);
+}
+
+.note > h3{
+    color: var(--color-text1);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tests{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.tests-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+.tests-item p:nth-child(2) >span{
+    color: var(--color-text2);
+    font-weight: 500;
+}
+
+.tests-item p:nth-child(2){
+    color: var(--background-button);
+}
+
+.tests-item p:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.reaction{
+    background-color: var(--background-reaction);
+    color: var(--reaction-text);
+}
+
+.reaction:hover{
+    background-color: var(--background-reaction-hover);
+}
+
+.memory{
+    background-color: var(--background-memory);
+    color: var(--memory-text);
+}
+
+.memory:hover{
+    background-color: var(--background-memory-hover);
+}
+
+.verbal{
+    background-color: var(--background-verbal);
+    color: var(--verbal-text);
+}
+
+.verbal:hover{
+    background-color: var(--background-verbal-hover);
+}
+
+.visual{
+    background-color: var(--background-visual);
+    color: var(--visual-text);
+}
+
+.visual:hover{
+    background-color: var(--background-visual-hover);
+}
+
+.button{
+    color: var(--color-text1);
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--background-button);
+    border: none;
+    padding: 1rem;
+    min-width: 300px;
+    border-radius: 1rem;
+}
+
+.button:hover{
+    box-shadow:0 0 30px rgb(7, 7, 160);
+}
+
+footer{
+    margin-top:1rem ;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header{
+        border-radius:1.5rem ;
+    }
+    
+    .content__body{
+        display: flex;
+        gap: 1rem;
+        width: 600px;
+        height: 400px;
+    
+    }
+}
