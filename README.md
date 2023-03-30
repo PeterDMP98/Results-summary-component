@@ -4,9 +4,11 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Table of contents
   - [Screenshot]( ["./assets/images/pc.PNG"], ["./assets/images/mobile.PNG])
+  - Solution URL: [Add solution URL here](https://github.com/PeterDMP98/Results-summary-component)
+  - Live Site URL: [Add live site URL here](https://phenomenal-scone-0dbaef.netlify.app/)
 
 
-  - [Links](#links)
+  - [Links]
 
 - [My process](#my-process)
   - [Built with](HTML, CSS)
@@ -17,5 +19,4 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
